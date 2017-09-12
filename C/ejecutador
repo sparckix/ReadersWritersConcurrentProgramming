@@ -1,0 +1,10 @@
+#!/bin/sh
+#gcc algoritmo_generico.c lectores_escritores_cond.c -o algoritmo_generico -pthread -lrt
+#/usr/bin/time -o stats -a -f "%e %U %S" ./algoritmo_generico
+#./algoritmo_generico
+gcc algoritmo_generico.c lectores_escritores_posix.c -o algoritmo_generico -pthread -lrt
+/usr/bin/time -o stats -a -f "%e %U %S" ./algoritmo_generico
+#./algoritmo_generico
+#gcc algoritmo_generico.c lectores_escritores_sysv.c -o algoritmo_generico -pthread -lrt
+#/usr/bin/time -o stats -a -f "%e %U %S" ./algoritmo_generico
+#./algoritmo_generico
